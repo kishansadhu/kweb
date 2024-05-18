@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PY-INFO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <style>
+
+        html{
+            scroll-behavior: smooth;
+
+            }
+        button:hover{
+            box-shadow:1px 1px 20px 1px black;
+        }
+
+        body {
+            background-color: black;
+
+            }
+
+        ::selection {
+            background-color: darksalmon;
+            color: black;
+        }
+
+        .one-img {
+            width: 50px;
+            height: 50px;
+            color: black;
+        }
+        a:hover{
+            position: relative;
+            bottom: 2px;
+            color: white;
+            background-color:black;
+            transition: 1.5s;
+            border-radius: 10px;
+
+        }
+        .col-lg-5{
+            border-right: 10px solid black;
+        }
+        .col-lg-4{
+            border-right: 10px solid black;
+        }
+        button{
+            border-radius: 10px;
+        }
+          video{
+            height: 200px;
+            width: 300px;
+        }
+        .logo-img{
+            width: 30px;
+        }
+        #audio{
+            opacity: 1;
+            width: 0px;
+            height: 0px;
+        }
+        .ripple {
+            position: absolute;
+            border-radius: 100%;
+            background:lightseagreen ;
+            transform: scale(0);
+            animation: ripple-animation 0.5s linear;
+        }
+        
+        @keyframes ripple-animation {
+            to {
+                transform: scale(0.4);
+                opacity: 0;
+            }
+        }
+        
+    </style>
+</head>
+<body onload="playAudio()">
+    <audio id="audio">
+        <source src="hpy-1.mp3" type="audio/mpeg" autoplay>
+    </audio>
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('audio');
+            audio.play();
+        }
+    </script>
+
+
+<!-- this is for the ripple this is for the ripple this is for the ripple this is for the ripple this is for  -->
+
+<script >
+    document.body.addEventListener('click', function(e) {
+        // Create the ripple element
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+
+        // Set the size of the ripple
+        const size = Math.min(document.body.clientWidth, document.body.clientHeight);
+        ripple.style.width = ripple.style.height = size + 'px';
+
+        // Set the position of the ripple
+        ripple.style.left = e.clientX - size / 2 + 'px';
+        ripple.style.top = e.clientY - size / 2 + 'px';
+
+
+        // Append the ripple to the body
+        document.body.appendChild(ripple);
+
+        // Remove the ripple after animation ends
+        ripple.addEventListener('animationend', () => {
+            ripple.remove();
+        });
+    });
+
+</script>
+
+
+
+
+
+
+
+<!-- this is for the navbar this is for the nababar this is for the navbar this is for the navbar -->
+    <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-info">
+        <img class="navbar-brand logo-img"
+            src="logo.png"
+            alt="">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#ki">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="ki">
+            <ul class="navbar-nav">
+                <li class="nav-item "> <h5><a href="index.html" class="nav-link ">HOME</a></h5> </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                <li class="nav-item "> <h5><a href="K-HTML.html" class="nav-link ">HTML</a></h5> </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                <li class="nav-item"> <h5><a href="PY.html" class="nav-link ">PYTHONE</a></h5> </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                <li class="nav-item"> <h5><a href="CONTACT.html" class="nav-link ">CONTACT</a></h5> </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+<div class="container-fluid">
+            <div class="jumbotron bg-dark text-white">
+                <abbr title="Programing Language"><h2 class="text-center">PYTHON</h2></abbr>
+                <dl>
+                    <h3><dt>1).What is Python? : </dt></h3>
+                      <h5><dd>=>Python is interpriter base programing language .Two types of programing language
+                        inter-priter and compiler base programing language <br><br>
+                        1).what is inter-priter = inter priter mens the code is chek or exicute by line by line <br>
+                        2).what is compilerbase = compiler base mens the code is exicute full he code <br>
+                      </dd></h5>
+                </dl>
+
+                <dl>
+                    <h3><dt>2).Programing language basic Terms: </dt></h3>
+                    a).commnde= the single line code <br>
+                    b).code= bunch of commands in code <br>
+                    c).program= bunch of code is program <br>
+                    d).script= bunch of program is script <br>
+                      <h5><dd>
+                    <dd>
+                        <h3> *** <b><u>Two types of programing language *** </u></b></h3><br>
+                        1).high-level Programing-lan    = its mining .humuns can understand esiley is called h.l.p.l(high-level Programing-lan) <br><br>
+                        2).low-level Programing-lan                 = its mining .humuns can not understand esiley is understand onley computer base language
+                    </dd>
+
+                      </dd></h5>
+                </dl><br><br>
+
+
+                <h3><dt>3).Python Topics :</dt></h3>
+                <h5>
+                    <dl>
+                        a) <u><b>Note = variable,oprater,conditional statments,loops,modules,librariy....</b></u>
+
+                    </dl>
+                </h5><br><br>
+
+
+                <h3><b>4).How many platform For python :</b></h3><br>
+                <h5>
+                    <dd>
+                        =>for pythone like <br>
+                        a). google-collabe (i am alse work on collab)<br>
+                        b).spider <br>
+                        c).idle pythone <br>
+                        d).anaconda <br>
+                    </dd>
+                </h5>
+            </div>
+        </div><!-- this is for the container-->
+
+<div class="container-fluid">
+
+    <div class="jumbotron text-white bg-primary">
+        <div class="row">
+            <div class="col-lg-11 col-sm-11">
+                <dl>
+                        <h2>1). What is Variable :</h2><br>
+                        <h3>&nbsp;&nbsp;&nbsp;&nbsp;=>variable is store the value in varibale <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;ex : <br>&nbsp;&nbsp;&nbsp;&nbsp; x=5 <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print(5) <br>
+                        => if your declare  x and after declare x so its print last declare variable mens print last x <br>
+                        =>in this print(x) . print() is called print functions <br>
+                        =>x=4 mens x is assigned 4 value so ,x is variable , 4 is value <br>
+                        </h3>
+
+
+                </dl>
+            </div>
+            <div class="col-lg-1 col-sm-1">
+                <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk1" onclick="lk1()"><h3>code</h3></button>
+                <div class="modal bg-warning" id="modelk1">
+                    <div class="modal-dialog  bg-dark">
+                        <div class="modal-content  bg-dark">
+                            <div class="modal-header  text-white bg-dark">
+                                <h3>code</h3>
+                            </div>
+                            <div class="modal-body bg-dark text-white">
+                                <p ><h5 id="m1"></h5></p>
+                                    <script>
+                                        function lk1() {
+                                       a= document.getElementById("m1").innerText=
+                                       "# this is for the variable\n\n"+
+                                       "x=4\n"+
+                                       "x='ks-web'\n"+
+                                       "print(x)"
+                                        }
+                                    </script>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+            <div class="row">
+                <div class="col-lg-5  col-sm-1 border-end-5">
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img class="img-0 img-thumbnail" src="py-1.png" alt="">
+
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <div class="col-lg-6 col-sm-1">
+                    <br>
+                    <img class="img-01 img-thumbnail" src="py-2.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+<!-- this is for the two this is for the two this is for the two  this is for the two -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <dl>
+                    <h2>2). In build functions :</h2><br>
+                    <h4>
+                        =>many types of functions are available <br><br>
+                        1).type(x) = its define data type of x <br>
+                        2).len(x) =lenth of x <br>
+                        3).sum(x) =is def the sum of varibales <br>
+                        4).min(x) =define minum values <br>
+                        5).max(x) =define max value of the variable <br>
+                        6).uppr(x) =its a convert in uppercase <br>
+                        7).lower(x) =its convert in lowecase like small text <br>
+                    </h4>
+                    </h3>
+
+
+            </dl>
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk2" onclick="lk2()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk2">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m2"></h5></p>
+                                <script>
+                                    function lk2() {
+                                   a= document.getElementById("m2").innerText= 
+                                   "# many types of in-buld functions\n\n"+
+                                    "x='ks-web'\n"+
+                                    "print(x)\n"+
+                                    "print(type(x))\n"+
+                                    "print(len(x))\n"
+                                    }
+                                </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="py-3.png" alt="">
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="col-lg-6 col-sm-1">
+                <br>
+                <img class="img-01 img-thumbnail" src="py-4.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+<!-- this is for the three thisa is for the three this is for the three this is for the three  -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <dl>
+                    <h2>3).commants  :</h2><br>
+                    <h4>
+               <b><u> *** Two types of the Python ***</u></b> <br>
+               =>comment = this is use for onley devloper understanding not use for the user or other <br>
+                1).sigle line comment = this is denoted by (#) <br><br>
+                2).multi-line comment= is also callled docstring and denoed by (''' this is multi line comments ''')
+                    </h4>
+                    </h3>
+
+
+            </dl>
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk3" onclick="lk3()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk3">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m3"></h5></p>
+                                <script>
+                                    function lk3() {
+                                   a= document.getElementById("m3").innerText= 
+                                   "#this is single line comment\n\n"+
+                                   "''' hello all. this is ks-web\nand this comment is not exicute or run'''"
+                                    }
+                                </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-12 col-sm-1 border-end-5">
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="py-5.png" alt="">
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+<!-- this is for the four this is four this is four this is four this is four this is four -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <dl>
+                    <h2>4). opraters :</h2><br>
+                    <center><b><u><h1>** LOGIC OPRATOR **</h1></u></b></center>
+                    <center><h2><b><u>*** Three types of oprater ***</u></b></h2></center> <br>
+                    <h3>
+                    =>and ,or and not oprater are available in py <br>
+                    =>simple opratoe and binarey opratore types available <br>
+                    <h2><b><u>a) .***** simple oprater ******</u></b></h2> <br>
+                    1).and oprater = and oprater is onley derived false value mens (0=zero) and and get work with truth table of and gate <br>
+                    if in detail in this image link  <kbd><a href="and-1.png" class="text-danger" target="_blank">and oprator</a> </kbd>  <br><br>
+
+                    2).or oprater = or oprater is onley derived True value mens (1=True) and or get work with truth table of or gate <br>
+                    if in detail in this image link <kbd><a href="or-1.png" class="text-danger" target="_blank">or oprator</a></kbd> <br><br>
+
+                    3).not oprater = not oprater is  derived True and False value if you enter (not 5) so its given false because its mens not true <br>
+                    if in detail in this image link <kbd><a href="not-1.png" class="text-danger" target="_blank">not oprator</a></kbd> <br><br>
+                    <b><h3><u class="text-danger" target="_blank">Note = if you use and,or both and not oprator so its work in sequnce below like :<br>
+                        not,and,or (first exicute not oprator mens alwayse not oprater write first then exicute and oprator and then or is last )
+                    </u></h3></b>
+                    </h3>
+
+
+            </dl>
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <div class="modal bg-warning" id="modelk4">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m4"></h5></p>
+                                <script>
+                                    function lk2() {
+                                   a= document.getElementById("m4").innerText
+                                    }
+                                </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-4  col-sm-1 border-end-5">
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="py-6.png" alt="">
+
+            </div><br>
+
+            <div class="col-lg-4 col-sm-1">
+                <br><br>
+                <img class="img-01 img-thumbnail" src="py-7.png" alt="">
+            </div>
+            <div class="col-lg-4  col-sm-1 border-end-5">
+                <br><br>
+                <img  mg class="img-0 img-thumbnail" src="py-8.png" alt="">
+            </div>
+        </div><br><br>
+
+<hr>
+        <div class="row">
+            <h2><b><u>b).*** Combination of and,or,not oprator ***</u></b></h2>
+            <br><br><br>
+            <div class="col-lg-12 col-sm-1">
+                <br><br>
+                <h3 id="ale">1).combination =  in this link all combination opraters are available  <kbd><a href="all-1.png" class="text-danger" target="_blank" onclick="a()" name="le">combinational oprator</a></kbd></h3> <br><br>
+                    <script>
+                        function a(){
+                            alert("if any quariy in this qustions so please go to contact page , and write a email me . i also ans you")
+                        }
+                    </script>
+            </div>
+        </div><br>
+<hr><br><br>
+<div class="row">
+    <h2><b><u>c).*** Binarey Opratores  ***</u></b></h2>
+    <br><br><br>
+    <div class="col-lg-12 col-sm-1">
+        <br><br>
+        <h3>
+            1).and oprater = and oprater is onley derived false value mens (0=zero) and and get work with truth table of and gate <br>
+                    if in detail in this image link  <kbd><a href="andb-1.png" class="text-danger" target="_blank">and oprator</a> </kbd>  <br><br>
+
+                    2).or oprater = or oprater is onley derived True value mens (1=True) and or get work with truth table of or gate <br>
+                    if in detail in this image link <kbd><a href="orb-1.png" class="text-danger" target="_blank">or oprator</a></kbd> <br><br>
+                    3).before not opratoer you can understand sign magnitude consept in  link full detail of  <kbd><a href="notb-1.png" class="text-danger" target="_blank">sign magnitude</a></kbd><br><br>
+                    4).not oprater = not oprater is  derived True and False value if you enter (not 5) so its given false because its mens not true <br>
+                    if in detail in this image link <kbd><a href="notb-2.png" class="text-danger" target="_blank">not oprator</a></kbd><br><br>
+                    5).xor gate = its work on xor gate truth table .  detail of <kbd><a href="xor-1.png" class="text-danger" target="_blank">xor</a></kbd><br><br>
+        </h3>
+    </div>
+</div>
+    </div>
+    </div>
+
+
+
+
+
+<!-- this is for the  -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <dl>
+                    <h2>4.1).Bitwis oprator :</h2><br> <br>
+                    <h3>
+                        1).bitwise opratore is working on binary num <br>
+                        2).two types of bitwise left sift and right sift bitwise oprator <br>
+ &nbsp;&nbsp;&nbsp;&nbsp;a).left shift =>  12 << 3 =ans is 96<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;b).right sift =>12 >> 3   = ans is 1 <br>
+                 </h3>
+
+                </dl>
+
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk5" onclick="lk5()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk5">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m5"></h5></p>
+                                <script>
+                                    function lk5() {
+                                   a= document.getElementById("m5").innerText=
+                                   "# this is for the right sift example\n"+
+                                    "print(15>>2)\n"+
+                                    "print(64>5)\n\n\n"+
+
+                                    "# this is for the left sift example\n"+
+                                    "print(9<<3)\n"+
+                                    "print(2<<5)\n"
+                                    }
+                                </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="py-9.png" alt="">
+
+            </div><br>
+            <div class="col-lg-6 col-sm-1">
+                <br><br>
+                <img class="img-01 img-thumbnail" src="py-10.png" alt="">
+            </div>
+        </div>
+</div>
+
+
+
+
+<!-- this is for the six this is for the six this is for the six this is for the six -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <dl>
+                    <h2>4.2).Arethmatic oprator :</h2><br> <br>
+                    <h3>
+                        =>in arethmatic oprator include(+&nbsp;&nbsp;,-&nbsp;&nbsp;,/&nbsp;&nbsp;,//(floor)&nbsp;&nbsp;,%(modulo)&nbsp;&nbsp;) <br>
+                    </h3>
+
+                </dl>
+
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk6" onclick="lk6()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk6">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m6"></h5></p>
+                                <script>
+                                    function lk6() {
+                                   a= document.getElementById("m6").innerText =
+                                  "# this for the arethmatic oprator\n\n"+
+                                    "x=5\n"+
+                                    "y=2\n\n"+
+                                    "print('addition =' , x+y)\n"+
+                                    "print('multiplication =',x * y)\n"+
+                                    "print('subtraction =' ,(x-y))\n"+
+                                    "print('devidation =' ,x/y)\n"+
+                                    "print('modulo =' , x%y)\n"+
+                                    "print('floor =', x//y)\n"
+                                                                        }
+                                </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="py-11.png" alt="">
+
+            </div><br>
+            <div class="col-lg-6 col-sm-1">
+                <br><br>
+                <img class="img-01 img-thumbnail" src="py-12.png" alt="">
+            </div>
+        </div>
+</div>
+
+
+
+
+<!-- this is for the seven this is for the seven this is for the seven this is for the seven  -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <dl>
+                    <h2>4.3).Assignment oprator :</h2><br> <br>
+                    <h3>
+                        =>in assignment oprator include(=&nbsp;&nbsp;,-=&nbsp;&nbsp;,/=&nbsp;&nbsp;*=&nbsp;&nbsp;,%=(modulo)&nbsp;&nbsp;) <br>
+                    </h3>
+
+                </dl>
+
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk7" onclick="lk7()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk7">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m7"></h5></p>
+                                <script>
+                                    function lk7() {
+                                   a= document.getElementById("m7").innerText = 
+                                  " # assignment oprator\n\n"+
+                                    "a=2\n"+
+                                    "a +=4 #mens = a+4\n"+
+                                    "print(a)\n\n"+
+
+                                    "a -=4\n"+
+                                    "print(a)\n\n"+
+
+                                    "a /=4\n"+
+                                    "print(a)\n\n"+
+
+                                    "a *=4\n"+
+                                   " print(a)\n"
+                                                                        }
+                                </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-12  col-sm-1 border-end-5">
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="py-13.png" alt="">
+            </div><br>
+</div>
+</div>
+
+
+
+
+<!-- this is for the eight this is for the eight this is for the eight this is for the eight this is for eight -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <dl>
+                    <h2>4.4).Comparator oprator :</h2><br> <br>
+                    <h3>
+                        =>in comparator oprator include(==&nbsp;&nbsp;,>&nbsp;&nbsp;,<&nbsp;&nbsp;,>=&nbsp;&nbsp;,<=(modulo)&nbsp;&nbsp;) <br><br>
+                        =>this oprator are work on boolean value(true, false)
+                    </h3>
+
+                </dl>
+
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk7" onclick="lk7()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk7">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m7"></h5></p>
+                                <script>
+                                    function lk7() {
+                                   a= document.getElementById("m7").innerText = 
+                                   "# comparator oprator\n"+
+                                    "a=5\n"+
+                                    "b=4\n\n"+
+                                    "print( a == b)\n"+
+                                    "print(a > b)\n"+
+                                    "print(a < b)\n"+
+                                    "print(a >= b)\n"+
+                                    "print(a <= b)\n"+
+                                    "print(a != b)\n"
+                                                                        }
+                                </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-12  col-sm-1 border-end-5">
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="py-14.png" alt="">
+            </div><br>
+</div>
+</div>
+
+
+
+
+
+
+<!-- this is for the nine this is for the nine thjis is for the nine this is forthe nine   -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <dl>
+                    <h2>4.5).membership ,identitiy oprator :</h2><br> <br>
+                    <h3>
+                        =>in membership oprator include(in &nbsp;&nbsp;,not in&nbsp;&nbsp;) <br><br>
+                        =>in indentity oprator include(is &nbsp;&nbsp; , is not &nbsp;&nbsp;) <br><br>
+                    </h3>
+
+                </dl>
+
+
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk10" onclick="lk10()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk10">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m10"></h5></p>
+                                <script>
+                                    function lk10() {
+                                   a= document.getElementById("m10").innerText = 
+                                  " # this is for the identitey oprator\n"+
+                                    "a='kishan'\n"+
+                                   " print('k' in a)\n"+
+                                    "print('H' not in  a)\n\n\n"+
+
+                                  "  # this is membership oprator\n"+
+                                    "b=5\n"+
+                                    "print(b is 5)\n"+
+                                   " print(b is not 5)\n"
+                                                                        }
+                                </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="py-15.png" alt="">
+            </div><br>
+            <div class="col-lg-6  col-sm-1 border-end-5">
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="py-16.png" alt="">
+            </div><br>
+</div>
+</div>
+
+
+<!-- this is ten this is for thwen this is for ten this is for ten this is for the ten this is for then this is for ten  -->
+
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <dl>
+                    <h2>5).Types Of Errors :</h2><br><br>
+                    <h3>
+                        1).syntex error  = is also called stucture error in detain in this link of <kbd><a href="sy-1.png" class="text-danger" target="_blank">syntex error</a></kbd><br>
+&nbsp;&nbsp;&nbsp;&nbsp;ex =print() =>instead of write print(  <br><br>
+                        2).name error  = is name error in detain in this link of <kbd><a href="name-1.png" class="text-danger" target="_blank">name error</a></kbd><br>
+&nbsp;&nbsp;&nbsp;&nbsp;ex =print() =>instead of write prnt("")  <br><br>
+
+                        3).indentation error  = if before variable given space so its create in detain in this link of <kbd><a href="in-1.png" class="text-danger" target="_blank">indantation error</a></kbd><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+
+                        4).value error = if int instead of write string so create value error in detain in this link of <kbd><a href="value-1.png" class="text-danger" target="_blank">value error</a></kbd><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+
+                        5).type error = if str instead of write int type in detain in this link of <kbd><a href="type-1.png" class="text-danger" target="_blank">type error</a></kbd><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+
+                        6).zero error = if we devide 5/0 is not devide so in detain in this link of <kbd><a href="zero-1.png" class="text-danger" target="_blank">zerodevision error</a></kbd><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+<center>maney error will be comming soon</center>
+                    </h3>
+
+                </dl>
+
+
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <div class="modal bg-warning" id="modelk11">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m10"></h5></p>
+                                <script>
+                                    function lk11() {
+                                   a= document.getElementById("m11").innerText
+                                                                        }
+                                </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+</div>
+</div>
+
+
+
+
+
+
+<!-- this is for teh eleven this is fopr the eleonen this is for the eleone this is for thwe eleone -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <dl>
+                    <h2>6).Data types :</h2><br><br>
+                     <h3>
+                        =>many type of data types are their <br><br>
+                        1).int      =is non decimal value <br>
+                        2).float    =decimal values (2.5 to extera) <br>
+                        3).boolean  = its get true and false value <br>
+                        4).floor    = if you entered floate value and its given int valuyes <br>
+                        5).string =anything write in single and duble inverted comma <br>
+                        6).set ,dictinary ,tuple this are the data structure of data types
+                                    <h2><U><B>DATA TYPE</B></U></h2> <br><br>
+                        <h3>
+                        a).mutable   = mutable data types is value are change in the data type <br>
+                        b).inmutable =in this values are not change in the data type <br>
+                        </h3>
+                    </h3>
+                </dl>
+
+
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <div class="modal bg-warning" id="modelk11">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m10"></h5></p>
+                                <script>
+                                    function lk11() {
+                                   a= document.getElementById("m11").innerText
+                                                                        }
+                                </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="row">
+        <div class="col-lg-12  col-sm-1 border-end-5">
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+            <img class="img-0 img-thumbnail" src="py-17.png" alt="">
+        </div><br>
+
+</div>
+</div>
+
+
+
+<!--thisisfoirthe ten this is for thwe ten this si for the ten  this is for the ten this is for the ten -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <dl>
+                    <h2>6.1).List data-type :</h2><br><br>
+                     <h3>
+                        =>the list is mutable data type list is also called a data structure use <br>
+                        =>in the list all values are allawable like int,float,string,nestedlist,complex value
+                        =>list is erite in [ ] =squre bracate <br>
+                        =>in this list maney functions are available <br><br>
+                        1).append = append is like add a new value in the List <kbd><a href="ape-1.png" class="text-danger" target="_blank">append info</a></kbd><br><br>
+                        2).extend = extend is add a othe list value <kbd><a href="exe-1.png" class="text-danger" target="_blank">extend info</a></kbd><br><br>
+                        3).count  =its count duplication so. <kbd><a href="count-1.png" class="text-danger" target="_blank">count info</a></kbd> <br><br>
+                        4).index  =index is working very usefull <kbd><a href="index-1.png" class="text-danger" target="_blank">index info</a></kbd> <br><br>
+                        5).insert =insert is add value over the old value  <kbd><a href="insert-1.png" class="text-danger" target="_blank">insert info</a></kbd> <br><br>
+                        6).
+
+
+                    </h3>
+                    </h3>
+                </dl>
+
+
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <div class="modal bg-warning" id="modelk13">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m13"></h5></p>
+                                <script>
+                                    function lk13() {
+                                   a= document.getElementById("m11").innerText
+                                                                        }
+                                </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="row">
+        <div class="col-lg-12  col-sm-1 border-end-5">
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+            <img class="img-0 img-thumbnail" src="py-18.png" alt="">
+        </div><br>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div> <!--container-fluid--> <br><br><br><br>
+
+
+
+
+
+
+<!-- this is for the footer  -->
+<div class="footer fixed-bottom">
+    <footer class="footer text-white bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <p><h4>© 2024  Create By KS Devloper</h4></p>
+            </div>
+            <div class="col-lg-6">
+
+            </div>
+          </div>
+        </div>
+      </footer>
+</div> <!-- this is fror the footer -->
+
+</body>
+</html>

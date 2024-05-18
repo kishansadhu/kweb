@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-INFO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <link rel="icon" href="logo.png" type="image/x-icon">
+<style>
+
+ html {
+            scroll-behavior: smooth;
+
+        }
+        button:hover{
+            box-shadow:1px 1px 20px 1px black;
+        }
+
+        body {
+            background-color: black;
+
+        }
+
+        ::selection {
+            background-color: darksalmon;
+            color: white;
+        }
+
+        .one-img {
+            width: 50px;
+            height: 50px;
+            color: black;
+        }
+        a:hover{
+            position: relative;
+            bottom: 2px;
+            color: white;
+            background-color:black;
+            transition: 1.5s;
+            border-radius: 10px;
+
+        }
+        .col-lg-5{
+            border-right: 10px solid black;
+        }
+        button{
+            border-radius: 10px;
+        }
+          video{
+            height: 200px;
+            width: 300px;
+        }
+        .logo-img{
+            width: 30px;
+        }
+        #audio{
+            opacity: 1;
+            width: 0px;
+            height: 0px;
+        }
+        .ripple {
+            position: absolute;
+            border-radius: 100%;
+            background:lightseagreen ;
+            transform: scale(0);
+            animation: ripple-animation 0.5s linear;
+        }
+        
+        @keyframes ripple-animation {
+            to {
+                transform: scale(0.4);
+                opacity: 0;
+            }
+        }
+        
+
+</style>
+</head>
+<body onload="playAudio()">
+    <audio id="audio">
+        <source src="html-1.mp3" type="audio/mpeg" autoplay>
+    </audio>
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('audio');
+            audio.play();
+        }
+    </script>
+
+<!-- this is for the ripple this is for the ripple this is for the ripple this is for the ripple this is for  -->
+
+
+
+
+
+
+
+
+<!-- this is for the navbar this is for the nababar this is for the navbar this is for the navbar -->
+<nav class="navbar  navbar-expand-sm sticky-top navbar-dark bg-info">
+    <img class="navbar-brand logo-img"
+        src="logo.png"
+        alt="">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#ki">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="ki">
+        <ul class="navbar-nav">
+            <li class="nav-item "> <h5><a href="index.html" class="nav-link ">HOME</a></h5> </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            <li class="nav-item "> <h5><a href="K-HTML.html" class="nav-link ">HTML</a></h5> </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            <li class="nav-item"> <h5><a href="PY.html" class="nav-link ">PYTHONE</a></h5> </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+            <li class="nav-item"> <h5><a href="CONTACT.html" class="nav-link ">CONTACT</a></h5> </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+        <button class="navbar-toggler " data-toggle="collapse" data-target="#PI">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="PI">
+            <ul class="navbar-nav">
+                <li class="nav-item "> <h5><a href="#h-info" class="nav-link">HTML-INFO</a></h5> </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                <li class="nav-item "> <h5><a href="#tag" class="nav-link ">TAGS</a></h5> </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+<div class="container-fluid">
+    <div class="jumbotron text-white col-lg-12  col-sm-4 bg-secondary" id="h-info">
+        <h3 class="text-center text-white"><abbr title="HYPER TEXT MARKUP LANGUAGE">HTML INFORMATION</abbr></h3>
+        <h5>
+            <b>
+                <ul type="1" class="text-white">
+                    <li>WHT IS HTML : HTML IS MARKUP LANGUAGE </li>
+                    <li>WHAT IS MENING OF HTML : HTML IS CREATE A SATATIC PAGE SO CALLED MARKUP LANGUAGE</li>
+                    <li>
+                        <dt>
+                            <dt>
+                                HTML is  windley use for creatwe a website without <abbr title="HYPER TEXT MARKUP LANGUAGE">HTML</abbr> 
+                                NOT CREATE ANY WEBSITE HTML IS SINGLE PLATFROM TO CREAT A SIMPLE AND STATIC WEBPAGE AND USING HTML TAGS CREATE COMPLETE WESBITE. IN HTML VARIUSE TYUPE OF TAGES ARE AVAILABLE
+                            </dt>
+                        </dt>
+                    </li>
+                </ul>
+            </b>
+        </h5>
+
+        <h5><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <footer class="text-white"><u>NOTE = IN MY WEBSITE FULL HTML I PROVIDE YOU</u></footer>
+        </b></h5>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!--           thisis for the tags this isfot he tags thias is for the tags this is for the tags  -->
+
+<div class="container-fluid" id="tag">
+    <div class="jumbotron text-white bg-primary">
+        <h1 class="text-white">1). !</h1><br>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <h2>INPUT</h2><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="img-1.png" alt="">
+                <h2> **********! them click enter end this is shortcut************</h2>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="col-lg-6 col-sm-1">
+                <h2>OUTPUT</h2><br>
+                <img class="img-01 img-thumbnail" src="img-2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+<!-- this is for the second  -->
+
+    <div class="jumbotron text-white bg-primary">
+        <div class="row">
+            <div class="col-lg-11 col-sm-11">
+                <h1 class="text-white">2). Paragraph</h1><br>
+            </div>
+            <div class="col-lg-1 col-sm-1">
+                <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk"><h3>code</h3></button>
+                <div class="modal" id="modelk">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>code</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    opiregijbr
+                                    soenowe <br>
+                                </p>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <h2>INPUT</h2><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="img-3.png" alt="">
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="col-lg-6 col-sm-1">
+                <h2>OUTPUT</h2><br>
+                <img class="img-01 img-thumbnail" src="img-4.png" alt="">
+            </div>
+        </div>
+    </div>
+
+<!-- this is for the third    -->
+
+<div class="jumbotron text-white bg-primary">
+<div class="row">
+    <div class="col-lg-11 col-sm-11">
+        <h1 class="text-white">3). Lists</h1><br>
+        <p>
+            1).list is use for the website <br>
+            2).list is denoted by ul,ol <br>
+            3).list item denoted by li <br>
+        </p>
+        <dl>
+            <dt>
+               list is very usfull tag for website and list is a other tags is
+                    <kbd>dd+dt+dl</kbd>
+            </dt>
+        </dl>
+    </div>
+    <div class="col-lg-1 col-sm-1">
+        <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk4" onclick="lk1()"><h3>code</h3></button>
+        <div class="modal bg-warning" id="modelk4">
+            <div class="modal-dialog  bg-dark">
+                <div class="modal-content  bg-dark">
+                    <div class="modal-header  text-white bg-dark">
+                        <h3>code</h3>
+                    </div>
+                    <div class="modal-body bg-dark text-white">
+                        <p ><h5 id="m1"></h5></p>
+                            <script>
+                                function lk1() {
+                               a= document.getElementById("m1").innerText =
+                                "<p>this is peraagraph</p>\n<p>sbsfd</p>"
+                                }
+
+                            </script>
+
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+    <div class="row">
+        <div class="col-lg-5  col-sm-1 border-end-5">
+            <h2>INPUT</h2><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+            <img class="img-0 img-thumbnail" src="img-5.png" alt="">
+
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <div class="col-lg-6 col-sm-1">
+            <h2>OUTPUT</h2><br>
+            <img class="img-01 img-thumbnail" src="img-6.png" alt="">
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<!-- this is forth   this bis for the foth -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <h1 class="text-white">4). Lists Other Tag</h1><br>
+            <dl>
+                <dt>
+                        <kbd>dd+dt+dl</kbd>
+                </dt>
+                <dd><u><b><h2>this tag is list tag .this is use for the write a pregrph in prfect methode.</h2></b></u></dd>
+            </dl>
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk5" onclick="lk2()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk5">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m2"></h5></p>
+                                <script>
+                                    function lk2() {
+                                   a= document.getElementById("m2").innerText =
+                                    "<dt>\n<kbd>dd+dt+dl</kbd>\n</dt>\n <dd>this tag is list tag .this is use for the write a pregrph in prfect methode.</dd>\n</dl>\n"
+                                    }
+                                </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <h2>INPUT</h2><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="img-7.png" alt="">
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="col-lg-6 col-sm-1">
+                <h2>OUTPUT</h2><br>
+                <img class="img-01 img-thumbnail" src="img-8.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+<!-- thisis for the five this is for the five -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <h1 class="text-white">5). Other Important Tags</h1><br>
+            <dl>
+
+            </dl>
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk6" onclick="lk6()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk6">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m6"></h5></p>
+                                <script>
+                                    function lk6() {
+                                   a= document.getElementById("m6").innerText=
+                                   "<!-- this is for kbd = keybord tag  -->\n<kbd>cnt+c</kbd><br>\n\n"+
+                                   "<!-- details = this is like fropdown -->\n<details>this is detail tag</details><br>\n\n"+
+                                   " <!-- this is for the center tag -->\n<center>this is center tag</center>\n\n"+
+                                   "<em>this is convert in intalik</em><br>\n\n"+
+                                   "<small>this is small text</small> <br>\n\n"
+                                    }
+                                </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <h2>INPUT</h2><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="img-9.png" alt="">
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="col-lg-6 col-sm-1">
+                <h2>OUTPUT</h2><br>
+                <img class="img-01 img-thumbnail" src="img-10.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+<!-- this is for the six this is for the six -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <h1 class="text-white">6).Comment , BR ,HR tags</h1><br>
+            <dl>
+                <h3>
+                    1).commant =commat is not preview in browser <br>
+                    2).br = brek the line mens after this tag use content write in new line <br>
+                    3).hr = is make a horizontal line after the content
+                </h3>
+            </dl>
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk7" onclick="lk7()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk7">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m7"></h5></p>
+                                <script>
+                                    function lk7() {
+                                   a= document.getElementById("m7").innerText=
+                                   "<!-- this is comment of html -->\n\n"+
+                                   "<br> <!-- this is br tag -->\n\n"+
+                                   "<hr> <!-- this is hr tag -->\n\n"
+                                    }
+                                </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <h2>INPUT</h2><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="img-11.png" alt="">
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="col-lg-6 col-sm-1">
+                <h2>OUTPUT</h2><br>
+                <img class="img-01 img-thumbnail" src="img-12.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+<!-- this is for thye seven th9is is for seven -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <h1 class="text-white">6).marqee tag</h1><br>
+            <dl>
+                <h3>
+
+                </h3>
+            </dl>
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk8" onclick="lk8()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk8">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m8"></h5></p>
+                                <script>
+                                    function lk8() {
+                                   a= document.getElementById("m8").innerText=
+                                   "<!-- this is for marqee tag\nin this tag two direction  left ,right -->\n\n"+
+                                 "<marquee direction='right'>KISHAN WEBSITE</marquee>"
+                                    }
+                                </script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <h2>INPUT</h2><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="img-13.png" alt="">
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="col-lg-6 col-sm-6">
+                <h2>OUTPUT</h2><br>
+               <video src="img-14.mp4" class="img-01" type="video/mp4" pixels loop controls autoplay></video>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+<!-- this is for eight this is for the eight -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <h1 class="text-white">7).Table Tag</h1><br>
+            <dl>
+                <h2>
+                    1).this is table <br>
+                    2).in table used td,tr,th <br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      a).tr= table raw in table row write all contant <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      b).th = in table column name is given by th <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      c).td= in column entered data <br>
+                    3).cell-spacing= this is use for given  two column space in table <br>
+                    4).cell-padding =this is given under table height ,width .so padding is css concept not html <br>
+                   <h2 class="text-white"><u>NOTE :: padding = padding is work in inside border</u></h2>
+                      </th>
+                </h2>
+            </dl>
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk9" onclick="lk9()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk9">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m9"></h5></p>
+                                <script>
+                                    function lk9() {
+                                   a= document.getElementById("m9").innerText=
+                                   "<style>\n"+
+                                    "table,tr,td,th{\n"+
+                                     "border : 2px solid black;\n"+
+                                     "}\n"+
+                                    "<\style>\n\n\n"
+                                    +
+                    "<!-- this is for table\n1).in table use tr,td,th-->\n\n"+
+
+                       "<table cellspacing='5' cellpadding='5'>\n"+
+                                    "<tr>\n"+
+                                        "<th>NAME</th>\n"+
+                                        "<th>ROLL_NO</th>\n"+
+                            "</tr>\n"+
+                            "<tr>\n"+
+                                "<td>kishan</td>\n"+
+                                "<td>83</td>\n"+
+                            "</tr>\n"+
+                            "<tr>\n"+
+                                "<td>ram</td>\n"+
+                                "<td>1</td>\n"+
+                            "</tr>\n"+
+                        "</table>"
+                                    }
+                                </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <h2>INPUT</h2><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="img-15.png" alt="">
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="col-lg-6 col-sm-1">
+                <h2>OUTPUT</h2><br>
+                <img class="img-01 img-thumbnail" src="img-16.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+<!-- this is for the nine this is for the nine -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <h1 class="text-white">7).Hadding Tag</h1><br>
+            <dl>
+                <h2>
+                    h1= hadding 1 <br>
+                    h2= hadding 2 <br>
+                    h3= hadding 3 <br>
+                    h4= hadding 4 <br>
+                    h5= hadding 5 <br>
+                    h6= hadding 6 <br>
+                </h2>
+            </dl>
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk10" onclick="lk10()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk10">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m10"></h5></p>
+                                <script>
+                                    function lk10() {
+                                   a= document.getElementById("m10").innerText=
+                                   "<h1>this is h1<\\h1>\n"+
+                                    "<h2>this is h2<\\h2>\n"+
+                                    "<h3>this is h3<\\h3>\n"+
+                                    "<h4>this is h4<\\h4>\n"+
+                                    "<h5>this is h5<\\h5>\n"+
+                                    "<h6>this is h6<\\h6>\n"
+                                    }
+                                </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <h2>INPUT</h2><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="img-17.png" alt="">
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="col-lg-6 col-sm-1">
+                <h2>OUTPUT</h2><br>
+                <img class="img-01 img-thumbnail" src="img-18.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+<!-- this is for ten this is for ten  -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <h1 class="text-white">8).Progress bar </h1><br>
+            <dl>
+                <h2>
+                </h2>
+            </dl>
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk11" onclick="lk11()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk11">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m11"></h5></p>
+                                <script>
+                                    function lk11() {
+                                   a= document.getElementById("m11").innerText =
+                                   "<!-- THIS IS FOR THE PROGREE BAR -->\n\n"+
+                                   "<progress> </progress>"
+                                    }
+                                </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <h2>INPUT</h2><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="img-19.png" alt="">
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="col-lg-6 col-sm-1">
+                <h2>OUTPUT</h2><br>
+                <video class="img-01" src="img-20.mp4" controls autoplay> </video>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+<!-- this is foe eleven this is foe eleven  -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <h1 class="text-white">9). button </h1><br>
+            <dl>
+                <h2>
+                </h2>
+            </dl>
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk12" onclick="lk12()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk12">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m12"></h5></p>
+                                <script>
+                                    function lk12() {
+                                   a= document.getElementById("m12").innerText =
+                                 "  <!-- this is for button -->\n\n "+
+                    "<!-- this is manubar button and use of navbar -->\n"+
+                    "<button type='menu'>menu</button>\n\n"+
+
+                    "<!-- this is simple button -->\n"+
+                   " <button type='button'>simple button</button>\n\n"+
+
+                    "<!-- this is reset all value if you entered\nexplain in form verey well -->\n"+
+                    "<button type='reset'>reset</button>\n\n"+
+
+                    "<!-- this is submit button also use in form  -->\n"+
+                   " <button type='submit'>submit</button>"
+
+                                    }
+                                </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <h2>INPUT</h2><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="img-21.png" alt="">
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="col-lg-6 col-sm-1">
+                <h2>OUTPUT</h2><br>
+                <img  class="img-01 img-thumbnail" src="img-22.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+<!-- thois is fore the twalve this is twelve  -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <h1 class="text-white">10). video,audio tag  </h1><br>
+            <dl>
+                <h2>
+                    video = vidio tag is provide for make a vidio and options like <br>
+&nbsp;&nbsp;&nbsp;&nbsp;a).controls= its provide a start and stop button and also provide volum button <br>
+&nbsp;&nbsp;&nbsp;&nbsp;b).autoplay= its work like if webpage is load then its a workig or autostart the audio <br> 
+                </h2>
+            </dl>
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk13" onclick="lk13()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk13">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m13"></h5></p>
+                                <script>
+                                    function lk13() {
+                                   a= document.getElementById("m13").innerText=
+                                   "<!-- this is for the audio and vidio tag  -->\n"+
+                                   "<!-- in this many options like autoplay... -->\n\n"+
+                                   "<video src='link.mp4' autoplay controls preload='auto'></video>\n\n"+
+                                   " <!-- this is for audio tag same options like video  -->\n\n"+
+                                   "<audio src='link.mp3' autoplay controls preload='auto'></audio>"
+                                    }
+                                </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <h2>INPUT</h2><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="img-23.png" alt="">
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="col-lg-6 col-sm-1">
+                <h2>OUTPUT</h2><br>
+                <img  class="img-01 img-thumbnail" src="img-24.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+<!--             this is for the thirtey  this is for the thirtey this is for the thirtey        -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <h1 class="text-white">11).img ,anchor tag </h1><br>
+            <dl>
+                <h2>
+
+                </h2>
+            </dl>
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk14" onclick="lk14()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk14">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m14"></h5></p>
+                                <script>
+                                    function lk14() {
+                                   a= document.getElementById("m14").innerText=
+                        "<!-- this is for the img and anchor(a) tag\noptins are many-->\n\n"+
+                    "<a href='CONTACT.html' target='_blank'>blank link</a><br>\n"+
+                    "<a href='CONTACT.html' target='_parent'>parent link</a><br>\n"+
+                    "<a href='CONTACT.html' target='_self'>self link</a><br>\n"+
+                    "<a href='CONTACT.html' target='_top'>top link</a> <br><br><br>\n\n"
+
+                    "<!-- img tag -->\n"+
+                    "<img src='logo.png' alt='ks-img'>"
+                                    }
+                                </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <h2>INPUT</h2><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="img-25.png" alt="">
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="col-lg-6 col-sm-1">
+                <h2>OUTPUT</h2><br>
+                <video class="img-01" src="img-26.mp4" controls autoplay> </video>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+<!-- this is for the fortwey this is for the fortey -->
+<div class="jumbotron text-white bg-primary">
+    <div class="row">
+        <div class="col-lg-11 col-sm-11">
+            <h1 class="text-white">12).     </h1><br>
+            <dl>
+                <h2>
+
+                </h2>
+            </dl>
+        </div>
+        <div class="col-lg-1 col-sm-1">
+            <button class="bnt btn-warning" data-toggle="modal" data-target="#modelk15" onclick="lk15()"><h3>code</h3></button>
+            <div class="modal bg-warning" id="modelk15">
+                <div class="modal-dialog  bg-dark">
+                    <div class="modal-content  bg-dark">
+                        <div class="modal-header  text-white bg-dark">
+                            <h3>code</h3>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p ><h5 id="m15"></h5></p>
+                                <script>
+                                    function lk15() {
+                                   a= document.getElementById("m15").innerText
+
+                                    }
+                                </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        <div class="row">
+            <div class="col-lg-5  col-sm-1 border-end-5">
+                <h2>INPUT</h2><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="img-0 img-thumbnail" src="img-27.png" alt="">
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="col-lg-6 col-sm-1">
+                <h2>OUTPUT</h2><br>
+                <!-- <video class="img-01" src="img-28.mp4" controls autoplay> </video> -->
+                <img src="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</div> <!--thisis for the container  -->
+
+
+
+
+
+
+
+
+
+
+
+<CENTER><a href="HTML-MY.pdf" download="HTML-MY.pdf">
+    <button>Download HTML PDF</button></CENTER>
+
+
+
+
+
+<br><br><br><br><br>
+<!--          this is for the footer this is for the footer this is fore the efooter          -->
+<div class="footer">
+    <footer class="footer fixed-bottom text-white bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p><h4>© 2024 Kishan Website . Create By KS Devloper</h4></p>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-inline text-md-right">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    document.body.addEventListener('click', function(e) {
+        // Create the ripple element
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+
+        // Set the size of the ripple
+        const size = Math.min(document.body.clientWidth, document.body.clientHeight);
+        ripple.style.width = ripple.style.height = size + 'px';
+
+        // Set the position of the ripple
+        ripple.style.left = e.clientX - size / 2 + 'px';
+        ripple.style.top = e.clientY - size / 2 + 'px';
+
+
+        // Append the ripple to the body
+        document.body.appendChild(ripple);
+
+        // Remove the ripple after animation ends
+        ripple.addEventListener('animationend', () => {
+            ripple.remove();
+        });
+    });
+
+</script>
+
+
+</body>
+</html>
